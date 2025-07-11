@@ -14,7 +14,6 @@ Before diving into the documentation, ensure you have the following installed an
 - [ ] **GitHub Account** - For repository access
 - [ ] **GitHub CLI** - Command-line GitHub interface (optional but recommended)
 - [ ] **Cursor** - AI-powered code editor
-- [ ] **Node.js** - JavaScript runtime (for development tools)
 - [ ] **VS Code Extensions** - Essential development extensions
 
 ### 🛠️ Step-by-Step Setup
@@ -153,20 +152,9 @@ cd C:\Git\bobbis-systems\ai-docs
 cursor .
 ```
 
-#### 6. Install Node.js (for development tools)
 
-**Download Node.js:**
-1. Visit [nodejs.org](https://nodejs.org)
-2. Download the LTS version
-3. Run the installer with default settings
 
-**Verify Installation:**
-```powershell
-node --version
-npm --version
-```
-
-#### 7. Essential VS Code Extensions
+#### 6. Essential VS Code Extensions
 
 Install these extensions in Cursor for the best development experience:
 
@@ -190,7 +178,7 @@ Install these extensions in Cursor for the best development experience:
 - Go
 - Rust
 
-#### 8. Configure Development Environment
+#### 7. Configure Development Environment
 
 **Create Workspace Settings:**
 ```powershell
@@ -245,7 +233,7 @@ Thumbs.db
 "@ | Out-File -FilePath ".gitignore" -Encoding UTF8
 ```
 
-#### 9. Verify Complete Setup
+#### 8. Verify Complete Setup
 
 **Test Everything:**
 ```powershell
@@ -258,9 +246,7 @@ gh auth status
 # Test Cursor
 cursor --version
 
-# Test Node.js
-node --version
-npm --version
+
 
 # Test repository access
 gh repo view

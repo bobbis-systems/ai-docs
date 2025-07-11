@@ -236,31 +236,9 @@ cursor .
 # Or open Cursor and use File → Open Folder
 ```
 
-### Step 6: Install Node.js
 
-**Download Node.js:**
-1. Go to [nodejs.org](https://nodejs.org)
-2. Download the LTS version (recommended)
-3. Save the installer to Downloads folder
 
-**Install Node.js:**
-1. Navigate to Downloads folder
-2. Right-click on Node.js installer and "Run as administrator"
-3. Follow the installation wizard with default settings
-4. Click "Finish" when complete
-
-**Verify Node.js Installation:**
-```powershell
-# Check Node.js version
-node --version
-# Expected output: v18.x.x or v20.x.x
-
-# Check npm version
-npm --version
-# Expected output: 9.x.x or 10.x.x
-```
-
-### Step 7: Install Essential Extensions
+### Step 6: Install Essential Extensions
 
 **Open Cursor and Install Extensions:**
 
@@ -296,7 +274,7 @@ cursor --install-extension ms-vscode.vscode-eslint
 cursor --install-extension formulahendry.auto-rename-tag
 ```
 
-### Step 8: Configure Development Environment
+### Step 7: Configure Development Environment
 
 **Create Workspace Settings:**
 ```powershell
@@ -412,7 +390,7 @@ jspm_packages/
 "@ | Out-File -FilePath ".vscode\launch.json" -Encoding UTF8
 ```
 
-### Step 9: Verify Complete Setup
+### Step 8: Verify Complete Setup
 
 **Test All Components:**
 ```powershell
@@ -427,9 +405,7 @@ gh auth status
 # Test Cursor
 cursor --version
 
-# Test Node.js
-node --version
-npm --version
+
 
 # Test repository access
 gh repo view
@@ -454,7 +430,7 @@ tree /F
 # └── README.md
 ```
 
-### Step 10: Initial Commit and Push
+### Step 9: Initial Commit and Push
 
 **Commit All Changes:**
 ```powershell
@@ -513,8 +489,6 @@ echo $env:PATH
 git --version
 gh --version
 cursor --version
-node --version
-npm --version
 ```
 
 ## 🔧 Troubleshooting Common Issues
@@ -579,7 +553,7 @@ gh auth status
 - [ ] GitHub account created and verified
 - [ ] GitHub CLI installed and authenticated
 - [ ] Cursor installed and configured
-- [ ] Node.js installed
+
 - [ ] Essential extensions installed
 - [ ] Development folder structure created
 - [ ] Git repository initialized and pushed to GitHub
